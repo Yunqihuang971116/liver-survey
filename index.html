@@ -145,16 +145,16 @@ const QS = [
   {id:'tel',    sec:'info', type:'tel',    label:'联系电话', placeholder:'请输入手机号码'},
 
   // FCRI-SF 9题
-  {id:'f1',sec:'fcri',type:'radio',label:'我担心癌症会复发或进展。',
-   sub:'以下各项描述了人们有时对癌症复发的感受，请选择最符合您过去一周状况的答案（共9题）。',opts:F4},
-  {id:'f2',sec:'fcri',type:'radio',label:'关于癌症复发的想法会突然涌现在我的脑海中。',opts:F4},
-  {id:'f3',sec:'fcri',type:'radio',label:'我会因为担心癌症复发而感到烦恼。',opts:F4},
-  {id:'f4',sec:'fcri',type:'radio',label:'我担心将来会因癌症而死。',opts:F4},
-  {id:'f5',sec:'fcri',type:'radio',label:'关于癌症复发的想法令我感到害怕。',opts:F4},
-  {id:'f6',sec:'fcri',type:'radio',label:'我很难停止思考癌症复发的问题。',opts:F4},
-  {id:'f7',sec:'fcri',type:'radio',label:'我比以前更频繁地检查身体，以发现癌症复发的迹象。',opts:F4},
-  {id:'f8',sec:'fcri',type:'radio',label:'我避免去做某些事情，因为担心这会提高癌症复发的风险。',opts:F4},
-  {id:'f9',sec:'fcri',type:'radio',label:'我担心癌症复发的想法会影响我的日常生活。',opts:F4},
+  {id:'f1',sec:'fcri',type:'radio',label:'我担心疾病会复发或进展。',
+   sub:'以下各项描述了人们有时对疾病复发的感受，请选择最符合您过去一周状况的答案（共9题）。',opts:F4},
+  {id:'f2',sec:'fcri',type:'radio',label:'关于疾病复发的想法会突然涌现在我的脑海中。',opts:F4},
+  {id:'f3',sec:'fcri',type:'radio',label:'我会因为担心疾病复发而感到烦恼。',opts:F4},
+  {id:'f4',sec:'fcri',type:'radio',label:'我担心将来会因疾病而死。',opts:F4},
+  {id:'f5',sec:'fcri',type:'radio',label:'关于疾病复发的想法令我感到害怕。',opts:F4},
+  {id:'f6',sec:'fcri',type:'radio',label:'我很难停止思考疾病复发的问题。',opts:F4},
+  {id:'f7',sec:'fcri',type:'radio',label:'我比以前更频繁地检查身体，以发现疾病复发的迹象。',opts:F4},
+  {id:'f8',sec:'fcri',type:'radio',label:'我避免去做某些事情，因为担心这会提高疾病复发的风险。',opts:F4},
+  {id:'f9',sec:'fcri',type:'radio',label:'我担心疾病复发的想法会影响我的日常生活。',opts:F4},
 
   // PHQ-9
   {id:'q1',sec:'phq9',type:'radio',label:'做事时提不起劲或没有乐趣',
@@ -461,7 +461,7 @@ function recordToRow(r){
 function makeInfoSheet(){
   return[
     ['量表','全称','题目数','满分','临床截断值','说明'],
-    ['FCRI-SF','Fear of Cancer Recurrence Inventory - Short Form','9','36','≥13 建议关注','评估癌症复发恐惧'],
+    ['FCRI-SF','Fear of Cancer Recurrence Inventory - Short Form','9','36','≥13 建议关注','评估疾病复发恐惧'],
     ['PHQ-9','Patient Health Questionnaire-9','9','27','≥10 中度抑郁;≥15 重度','抑郁筛查与严重程度'],
     ['PHQ-15','Patient Health Questionnaire-15','15','30','≥10 中度躯体化','躯体症状严重程度'],
     ['GAD-7','Generalized Anxiety Disorder-7','7','21','≥10 中度焦虑','广泛性焦虑筛查'],
